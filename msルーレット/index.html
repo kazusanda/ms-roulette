@@ -3,20 +3,32 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
-    <!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
     <style type="text/css">
         <!-- /*css*/
         -->
     </style>
     <script type="text/javascript">
         function disp() {
-
             window.alert('アラートの表示');
+            enotiru()
+        }
+
+        function enotiru() {
+            var array = ['新宿', '秋葉原', '行かない'];
+
+            console.log(array[0]); // 新宿
+            console.log(array[1]); // 秋葉原
+            console.log(array[2]); // 行かない
+            console.log(random(array))
+            
 
         }
+
+        function random(arrayData) {
+            var arrayIndex = Math.floor(Math.random() * arrayData.length);
+            return arrayData[arrayIndex];
+        }
+
     </script>
 
     <title>MS-ルーレット</title>
